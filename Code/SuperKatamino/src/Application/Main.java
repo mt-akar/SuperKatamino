@@ -18,9 +18,9 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         mainStage = primaryStage;
+
         primaryStage.setTitle("Super Katamino");
-
-
+        primaryStage.setResizable(false);
 
         MainScene mainScene = new MainScene();
         primaryStage.setScene(mainScene);

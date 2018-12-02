@@ -1,8 +1,10 @@
 package Scenes;
 
+import Application.Main;
 import Pentaminoes.*;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
@@ -52,9 +54,18 @@ public class GameScene extends Scene {
         // Initialize members
         this.level = level;
         gameBoard = new boolean[5][level.width];
-        for (int i = 0; i < 5; i++)
-            for (int j = 0; j < level.width; j++)
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < level.width; j++) {
                 gameBoard[i][j] = false;
+            }
+        }
+
+        // Back button
+        Button back = new Button("Back");
+        gameLayout.getChildren().add(back);
+        back.setOnAction(e -> {
+            Main.mainStage.setScene(new LevelPickerScene());
+        });
     }
 
     // TODO: Add remaining pieces
