@@ -22,8 +22,7 @@ public class MainScene extends Scene {
         mainLayout.getChildren().addAll(tutorialButton, resumeButton, playButton, optionsButton);
 
         resumeButton.setOnAction(e -> {
-            GameLevel level = new GameLevel(3, new int[] {1, 4, 5, 12, 1, 1});
-            Main.mainStage.setScene(new GameScene(level));
+            Main.mainStage.setScene(new LevelPickerScene());
         });
     }
 }
