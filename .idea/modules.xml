@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/javafxTrial.iml" filepath="$PROJECT_DIR$/javafxTrial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SuperKatamino.iml" filepath="$PROJECT_DIR$/SuperKatamino.iml" />
     </modules>
   </component>
 </project>
